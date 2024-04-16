@@ -42,7 +42,7 @@ app.get('/ITC505/lab-7/index.html', (req, res) => {
 app.post('/ITC505/lab-7/index.html', (req, res) => {
   const { noun, adjective, verb, adverb, pluralNoun } = req.body;
 
-  const madLib = `Once upon a time, a ${adjective} ${noun} decided to ${verb} ${adverb} because they wanted to see the world filled with ${pluralNoun}.`;
+  const madLib = `In a land far away, a ${adjective} ${noun} decided to ${verb} ${adverb} because they wanted to find ${pluralNoun} to save the kingdom.`;
 
   res.send(madLib);
 });

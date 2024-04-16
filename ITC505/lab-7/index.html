@@ -31,23 +31,23 @@
   <div class="addendum">
     <ul>
       <li>
-        Event Handling with DOMContentLoaded:
-        The DOMContentLoaded event is fired when the initial HTML document has been completely loaded and parsed, without waiting for stylesheets, images, and subframes to finish loading.
-You're using document.addEventListener('DOMContentLoaded', function () { ... }) to run code after the DOM has been fully loaded. This ensures that your JavaScript code doesn't execute until the HTML content is ready.
+        Event Management Using Loaded DOM Content:
+        When the first HTML page has loaded and been parsed entirely, without having to wait for stylesheets, graphics, or subframes to fully load, the DOMContentLoaded event is triggered.
+After the DOM has fully loaded, you are executing code using document.addEventListener('DOMContentLoaded', function () {... }). By doing this, you can make sure that your JavaScript code doesn't run before the HTML content is prepared.
       </li>
       <li>
-        Form Submission Handling:
-        You've attached an event listener to the form with the id madLibForm using form.addEventListener('submit', function (event) { ... }).
-Inside this event listener, you prevent the default form submission behavior using event.preventDefault(). This prevents the form from being submitted in the traditional manner, allowing you to handle the submission via JavaScript.
+        Handling of Form Submission:
+        Using form.addEventListener('submit', function (event) {... }), you have added an event listener to the form with the id madLibForm.
+Using event.preventDefault(), you may stop the default form submission action inside this event listener. By doing this, the form can't be submitted the conventional way, and you may manage the submission using JavaScript.
       </li>
       <li>
-        DOM Manipulation:
-        You're reading the values of various form inputs (noun, adjective, verb, adverb, pluralNoun) using document.getElementById('elementId').value. This retrieves the current values entered by the user in each input field.
-You're dynamically constructing a URL-encoded string (formData) containing the form data, which will be sent to the server via a POST request.
+        DOM Trickery:
+        Using document.getElementById('elementId').value, you are reading the values of different form inputs (noun, adjective, verb, adverb, pluralNoun). This gets the values that the user has typed in each input field as of right now.
+The form data is being dynamically created as a URL-encoded string (formData), which will be submitted as part of a POST request to the server.
       </li>
       <li>
-        Error Handling:
-        You're handling errors that may occur during the fetch operation using .catch(). If an error occurs during the fetch operation (e.g., network error, server error), you log the error to the console.
+        Error Reduction:
+        Using.catch(), you're taking care of potential fetch operation faults. You record errors to the console if they arise during the retrieve procedure (such as server or network errors).
       </li>
     </ul>
   </div>
